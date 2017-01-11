@@ -1,0 +1,126 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="arturoki.cuentacp.Pag1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_alignTop="@+id/button4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <!-- estas dos lineas arreglan el fallo de que el edit text se
+            volviese con el foco al inicio de la aplicacion-->
+
+            <!-- tenia un theme que era el que había puesto en el theme editor pero da problemas y esta mal configurado, lo he
+            quitado en el spinner-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Elige el Pokemon"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <!--android:layout_width="274dp"-->
+            <Spinner
+
+            android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:id="@+id/spinner"
+                android:layout_marginTop="46dp"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:entries="@array/string_array"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Pon sus Puntos de combate"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/spinner"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/editText"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/textView2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="0.43"
+                    android:layout_toLeftOf="@id/button"
+                    android:layout_gravity="left" />
+
+                <Button
+                    android:layout_width="104dp"
+                    android:layout_height="wrap_content"
+                    android:text="Calcular"
+                    android:id="@+id/button"
+                    android:layout_below="@+id/editText"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/abc_search_url_text_selected"
+                    android:layout_alignRight="@+id/editText"
+                    android:layout_alignEnd="@+id/editText"
+                    android:width="12dp"
+                    android:height="25dp"
+                    android:textSize="15dp"
+                    android:layout_weight="0.23"
+                    android:layout_toRightOf="@id/editText"
+                    android:layout_gravity="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="286dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/textView3"
+                    android:layout_below="@+id/linearLayout"
+                    android:layout_alignLeft="@+id/linearLayout"
+                    android:layout_alignStart="@+id/linearLayout"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/linearLayout"
+                    android:layout_alignEnd="@+id/linearLayout"
+                    android:layout_weight="4.41" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

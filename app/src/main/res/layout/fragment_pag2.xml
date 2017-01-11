@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.Pag2">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Items desbloqueados por nivel"
+                android:id="@+id/textView6"
+                android:layout_below="@+id/scrollView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="451dp"
+                android:id="@+id/listView"
+                android:layout_below="@+id/scrollView3"
+                android:layout_toRightOf="@+id/scrollView3"
+                android:layout_toEndOf="@+id/scrollView3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_below="@+id/scrollView3"
+                android:layout_toLeftOf="@+id/Acerca"
+                android:layout_toStartOf="@+id/Acerca"
+                android:src="@drawable/exp2"
+                android:layout_gravity="left" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
